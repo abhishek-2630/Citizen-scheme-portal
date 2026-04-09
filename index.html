@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Citizen Scheme Portal</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo">🏛️ Citizen Scheme Portal</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Browse Schemes</a>
+    <a href="#">Check Eligibility</a>
+    <button class="login-btn" onclick="location.href='login.html'">Login</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="images/slide1.jpg" class="slide active">
+  <img src="images/slide2.jpg" class="slide">
+  <img src="images/slide3.jpg" class="slide">
+
+  <div class="hero-content">
+    <h1>Find the Right Government Scheme for You</h1>
+    <p>Access 1500+ schemes across India</p>
+
+    <div class="hero-btns">
+      <button onclick="openModal()">Find My Scheme</button>
+      <button class="secondary">Browse All</button>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<div class="search-container">
+  <input placeholder="Search schemes, benefits, categories...">
+  <button>Search</button>
+</div>
+
+<!-- TRENDING -->
+<div class="tags">
+  <span>PM Kisan</span>
+  <span>Ayushman Bharat</span>
+  <span>PMAY</span>
+  <span>Scholarship</span>
+  <span>NREGA</span>
+</div>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="stat-box">1500+<br><span>Schemes</span></div>
+  <div class="stat-box">80 Crore<br><span>Beneficiaries</span></div>
+  <div class="stat-box">28 States<br><span>Coverage</span></div>
+</section>
+
+<!-- CATEGORY -->
+<section class="categories">
+  <h2>Browse by Category</h2>
+
+  <div class="grid">
+    <div class="card">🌾 Farming</div>
+    <div class="card">🏥 Health</div>
+    <div class="card">🎓 Education</div>
+    <div class="card">🏠 Housing</div>
+    <div class="card">💼 Employment</div>
+    <div class="card">👩 Women</div>
+    <div class="card">💰 Finance</div>
+    <div class="card">🛡️ Insurance</div>
+  </div>
+</section>
+
+<!-- RESULT -->
+<section id="result-container"></section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+
+  <div class="modal-full">
+
+    <!-- HEADER -->
+    <div class="modal-header">
+      <h2>Smart Eligibility Finder</h2>
+      <span onclick="closeModal()">✖</span>
+    </div>
+
+    <!-- STEPS -->
+    <div class="steps">
+      <div class="step-box active" id="s1">1</div>
+      <div class="step-box" id="s2">2</div>
+      <div class="step-box" id="s3">3</div>
+      <div class="step-box" id="s4">4</div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="step-content">
+
+      <h3 id="question">What is your age?</h3>
+
+      <div id="input-box">
+        <input id="input" placeholder="Enter your age">
+      </div>
+
+      <div class="buttons">
+        <button onclick="prevStep()" class="back">⬅ Back</button>
+        <button onclick="nextStep()" class="next">Next ➡</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
