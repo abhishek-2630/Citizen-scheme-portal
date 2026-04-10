@@ -279,3 +279,33 @@ body {
   width:90%;
   padding:10px;
 }
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+section {
+  margin-bottom: 25px;
+}
+.stats {
+  display:flex;
+  gap:10px;
+  justify-content:space-between;
+}
+
+.stat-box {
+  flex:1;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:12px;
+}
+.cta {
+  width:100%;
+  background:linear-gradient(135deg,#0d3b66,#1e5aa5);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
